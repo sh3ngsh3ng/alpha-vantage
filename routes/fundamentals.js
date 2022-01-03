@@ -5,9 +5,7 @@ const axios = require("axios")
 // income statement route
 router.get("/:ticker/income-statement", async(req,res) => {
     let stock = req.params.ticker
-    let url = `https://www.alphavantage.co/query?function=INCOME_STATEMENT&symbol=
-                ${stock}&apikey=
-                ${process.env.API_KEY}`
+    let url = `https://www.alphavantage.co/query?function=INCOME_STATEMENT&symbol=${stock}&apikey=${process.env.API_KEY}`
     let axiosConfig = {
         json: true,
         headers: {

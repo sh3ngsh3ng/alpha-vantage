@@ -31,7 +31,6 @@ router.get("/:ticker", async(req,res) => {
             y: [O,H,L,C]
         }]
     */
-    for 
     res.render("chart")
 
 })

@@ -1,0 +1,36 @@
+{{#extends "base"}}
+
+{{#block 'content'}}
+<table class="table">
+      <thead>
+        <tr>
+          <th>Ticker Symbol</th>
+          <th>Income Statement</th>
+          <th>Balance Sheet</th>
+          <th>Cash Flow</th>
+          <th>Earnings</th>
+          <th>Company Overview</th>
+          <th>Earnings Calendar</th>
+          <th>Price Chart</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each stocks}}
+            <tr>
+                <td>{{this}}</td>
+                <td><a href="/fundamentals/{{this}}/income-statement/">Income Statement</a></td>
+                <td><a href="/fundamentals/{{this}}/balance-sheet/">Balance Sheet</a></td>
+                <td><a href="/fundamentals/{{this}}/cash-flow/">Cash Flow</a></td>
+                <td><a href="/fundamentals/{{this}}/earnings/">Earnings</a></td>
+                <td><a href="/fundamentals/{{this}}/overview/">Company Overview</a></td>
+                <td><a href="/fundamentals/{{this}}/earnings-calendar/">Earnings Calendar</a></td>
+                <td><a href="/chart/{{this}}">Chart</a></td>
+            </tr>
+        {{/each}}
+      </tbody>
+</table>
+
+{{/block}}
+
+
+{{/extends}}

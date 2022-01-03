@@ -1,0 +1,133 @@
+{{#extends "base"}}
+
+{{#block "content"}}
+<h1>{{stock}}</h1>
+<h2>Annual Reports</h2>
+<table class="table">
+    <thead>
+        <th>Fiscal Date</th>
+        <th>Gross Profit</th>
+        <th>Total Revenue</th>
+        <th>Cost of Revenue</th>
+        <th>Cost of Goods n Services Sold</th> 
+        <th>Operating Income</th>
+        <th>Selling General and Administrative</th>
+        <th>Research and Developement</th>
+        <th>Operating Expenses</th>
+        <th>Investment Income Net</th>
+        <th>net Interest Income</th>
+        <th>Interest Income</th>
+        <th>Interest Expense</th>
+        <th>Non Interest Income</th>
+        <th>Other Non-Operating Income</th>
+        <th>Depreciation</th>
+        <th>Depreciation and Amortization</th>
+        <th>Income Tax Expense</th>
+        <th>Income before Tax</th>
+        <th>Interest and Debt Expense</th>
+        <th>Net Income From Continuing Operations</th>
+        <th>Comprehensive Income Net of Tax</th>
+        <th>ebit</th>
+        <th>ebitda</th>
+        <th>Net Income</th>
+    </thead>
+    <tbody>
+        {{#each annualReports}}
+        <tr>
+            <td>{{fiscalDateEnding}}</td>
+            <td>{{grossProfit}}</td>
+            <td>{{totalRevenus}}</td>
+            <td>{{costOfRevenue}}</td>
+            <td>{{costofGoodsAndServicesSold}}</td>
+            <td>{{operatingIncome}}</td>
+            <td>{{sellingGeneralAndAdministrative}}</td>
+            <td>{{researchAndDevelopment}}</td>
+            <td>{{operatingExpenses}}</td>
+            <td>{{investmentIncomeNet}}</td>
+            <td>{{netInterestIncome}}</td>
+            <td>{{interestIncome}}</td>
+            <td>{{interestExpense}}</td>
+            <td>{{nonInterestIncome}}</td>
+            <td>{{otherNonOperatingIncome}}</td>
+            <td>{{depreciation}}</td>
+            <td>{{depreciationAndAmortization}}</td>
+            <td>{{incomeBeforeTax}}</td>
+            <td>{{incomeTaxExpense}}</td>
+            <td>{{interestAndDebtExpense}}</td>
+            <td>{{netIncomeFromContinuingOperations}}</td>
+            <td>{{comprehensiveIncomeNetOfTax}}</td>
+            <td>{{ebit}}</td>
+            <td>{{ebitda}}</td>
+            <td>{{netIncome}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+<h2>Quarterly Reports</h2>
+<table class="table">
+    <thead>
+        <th>Fiscal Date</th>
+        <th>Gross Profit</th>
+        <th>Total Revenue</th>
+        <th>Cost of Revenue</th>
+        <th>Cost of Goods n Services Sold</th> 
+        <th>Operating Income</th>
+        <th>Selling General and Administrative</th>
+        <th>Research and Developement</th>
+        <th>Operating Expenses</th>
+        <th>Investment Income Net</th>
+        <th>net Interest Income</th>
+        <th>Interest Income</th>
+        <th>Interest Expense</th>
+        <th>Non Interest Income</th>
+        <th>Other Non-Operating Income</th>
+        <th>Depreciation</th>
+        <th>Depreciation and Amortization</th>
+        <th>Income Tax Expense</th>
+        <th>Income before Tax</th>
+        <th>Interest and Debt Expense</th>
+        <th>Net Income From Continuing Operations</th>
+        <th>Comprehensive Income Net of Tax</th>
+        <th>ebit</th>
+        <th>ebitda</th>
+        <th>Net Income</th>
+    </thead>
+    <tbody>
+        {{#each quarterlyReports}}
+        <tr>
+            <td>{{fiscalDateEnding}}</td>
+            <td>{{grossProfit}}</td>
+            <td>{{totalRevenus}}</td>
+            <td>{{costOfRevenue}}</td>
+            <td>{{costofGoodsAndServicesSold}}</td>
+            <td>{{operatingIncome}}</td>
+            <td>{{sellingGeneralAndAdministrative}}</td>
+            <td>{{researchAndDevelopment}}</td>
+            <td>{{operatingExpenses}}</td>
+            <td>{{investmentIncomeNet}}</td>
+            <td>{{netInterestIncome}}</td>
+            <td>{{interestIncome}}</td>
+            <td>{{interestExpense}}</td>
+            <td>{{nonInterestIncome}}</td>
+            <td>{{otherNonOperatingIncome}}</td>
+            <td>{{depreciation}}</td>
+            <td>{{depreciationAndAmortization}}</td>
+            <td>{{incomeBeforeTax}}</td>
+            <td>{{incomeTaxExpense}}</td>
+            <td>{{interestAndDebtExpense}}</td>
+            <td>{{netIncomeFromContinuingOperations}}</td>
+            <td>{{comprehensiveIncomeNetOfTax}}</td>
+            <td>{{ebit}}</td>
+            <td>{{ebitda}}</td>
+            <td>{{netIncome}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+
+{{/block}}
+
+
+{{/extends}}
+
+
